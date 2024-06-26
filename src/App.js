@@ -1,12 +1,16 @@
 import logo from './logo.svg';
 import './App.css';
 
+function Header(){
+  return <header>
+  <h1><a href="/">CREATE REACT APP</a></h1>
+</header>
+}
+
 function App() {
   return (
     <div className="App">
-      <header>
-        <h1><a href="/">CREATE REACT APP</a></h1>
-      </header>
+      <Header></Header>
       <nav>
         <ol>
           <li><a href="/read/1">Less to Learn</a></li>
