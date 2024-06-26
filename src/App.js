@@ -7,21 +7,29 @@ function Header(){
 </header>
 }
 
+function Nav(){
+  return <nav>
+  <ol>
+    <li><a href="/read/1">Less to Learn</a></li>
+    <li><a href="/read/2">Only One Dependency</a></li>
+    <li><a href="/read/3">No Lock-In</a></li>
+  </ol>
+</nav>
+}
+
+function Article(){
+  return <article>
+  <h1>REACT site</h1>
+  <a href='https://create-react-app.dev/'>https://create-react-app.dev/</a>
+</article>
+}
+
 function App() {
   return (
     <div className="App">
       <Header></Header>
-      <nav>
-        <ol>
-          <li><a href="/read/1">Less to Learn</a></li>
-          <li><a href="/read/2">Only One Dependency</a></li>
-          <li><a href="/read/3">No Lock-In</a></li>
-        </ol>
-      </nav>
-      <article>
-        <h1>REACT site</h1>
-        <a href='https://create-react-app.dev/'>https://create-react-app.dev/</a>
-      </article>
+      <Nav></Nav>
+      <Article></Article>
     </div>
   );
 }
